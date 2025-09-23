@@ -156,7 +156,7 @@
     text-align: center;
     font-size: 40px;
     color: #86937d;
-    margin-top: 25%; 
+    margin-top: 20%; 
     font-weight: 400;
   font-family: "Pinyon Script", cursive;
 
@@ -165,7 +165,7 @@
     text-align: center;
     font-size: 40px;
     color: #86937d;
-    margin-top: 25%; 
+    margin-top: 20%; 
     font-weight: 400;
   font-family: "Pinyon Script", cursive;
 
@@ -183,6 +183,18 @@
     width: 25%;
     margin-left: 38%;
     margin-top: -15%;
+    
+  }
+   .linea{
+    color:#6B928F;
+    width: 70%;
+   margin-left: 15%;
+   margin-top: 5%;
+  }
+  .parroquia{
+    width: 23%;
+    margin-left: 40%;
+    margin-top: -24%;
     
   }
    .playlis{
@@ -223,7 +235,7 @@
      background-size: 80%;
       box-shadow: 1px 1px 30px -5px#d2c598; 
       cursor: pointer;
-      background-color: #5b603c;
+      background-color: #86937d;
       text-decoration: none;
     }
     .boton{
