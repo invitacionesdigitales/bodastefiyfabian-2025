@@ -1,14 +1,4 @@
-botonn.addEventListener("click", function(){
-    if (!sound) {
-      v.play();
-      this.innerHTML = "➤";
-      sound = true;
-     } else {
-      v.pause();
-      this.innerHTML = "❚❚";
-      sound = false;
-     } 
-   });
+
 
    
 let diaEvento = new Date('December 06, 2025 21:30:00').getTime();

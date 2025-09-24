@@ -34,25 +34,28 @@
 
 <body>
 
+ 
+ <audio id="audio" src="./musica/videoplayback.m4a"></audio>
 
-  
-
-
-  <audio class="audio" src="./musica/" controls>
-  </audio>
+<div class="music-player" id="player">
+  <button class="play-btn" id="playBtn">▶︎</button>
+</div>
+   
   
 
 
 
   <div>
+    
     <img class="portada"  src="./IMAGENES/portada.jpg" alt="" srcset="">
-  </div>
-  
-  <button class="click" id="botonn"><span class="melodia">❚❚</span></button>
+    
  
 
 
+
+
  
+
 
 
 
@@ -108,6 +111,8 @@
 
 <section class="seccion-fiesta">
   <img class="separador" src="./IMAGENES/separarador-3-768x432.png" alt="">
+
+
   <h2 class="fiesta">Ceremonia</h2>
   <img class="copas" src="./IMAGENES/anillo.gif" alt="">
   
@@ -155,9 +160,9 @@
 
 <section class="seccion-vestimenta">
   <h2 class="fiesta">Regalo</h2>
-  <img class="copas" src="./IMAGENES/regalo.png" alt="">
+  <img class="regalo" src="./IMAGENES/regalo.png" alt="">
   
-  <p class="parrafodos"> No necesitamos mas que <br> tu presencia
+  <p class="parrafodos"> No necesitamos más que <br> tu presencia
     pero si queres <br> hacernos algun regalo te  <br> dejamos una opción.
   </p>
 <Div class="boton">
@@ -209,8 +214,8 @@ CBU: ...
 
 
 <p class="musica"> Música</p> 
-<img class="playlis" src="./IMAGENES/musica.gif" alt="">
-      <p class="parrafodos">¿Qué tema no puede faltar ?  </p> 
+<img class="playlis" src="./IMAGENES/musica.gif" alt=""> <br><br>
+      <p class="parrafodos">¿Qué tema no puede faltar ?  </p>  
      <div class="boton">
       <a class="click3" href="https://forms.gle/kUXc1C7M13Xpgz8eA" target="_blank">RECOMENDAR CANCIÓN</a>
      </div>
@@ -239,38 +244,21 @@ CBU: ...
 
 
 
-<script type="text/javascript">
- 
-var v = document.getElementsByTagName("audio")[0];
- 
-var sound = false;
- 
-var botonn = document.getElementById("botonn");
- 
-botonn.addEventListener("musica", function(){
- 
-if (!sound) {
- 
-v.play();
- 
-this.innerHTML = "♬";
- 
-sound = true;
- 
-} else {
- 
-v.pause();
- 
-this.innerHTML = "▼";
- 
-sound = false;
- 
-}
- 
-});
- 
+<script>
+  const audio = document.getElementById("audio");
+  const playBtn = document.getElementById("playBtn");
+
+  playBtn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = "❚❚"; // pausa
+    } else {
+      audio.pause();
+      playBtn.textContent = "▶︎"; // play
+    }
+  });
 </script>
-  
+
 
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
