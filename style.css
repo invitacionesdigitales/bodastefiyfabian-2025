@@ -258,8 +258,8 @@ margin-top: 5%;
     }
 .parrafoDe{
   text-align: center;
-  font-size: 25px;
-  color: #ffffff;
+  font-size: 20px;
+  color: #4d4d4d;
   margin-top: 12%; 
   margin: 5%;
   font-family: "Arsenal SC", sans-serif;
@@ -267,6 +267,14 @@ margin-top: 5%;
   background-image: url(./imagenes/5af1f7230024abf57e8020427471018e.gif);
   background-size:30%;
 
+}
+.fabi{
+  width: 14%;
+margin-left: 5% ;
+}
+.stefi{
+  width: 14%;
+margin-left: 5% ;
 }
 .parrafo3{
   text-align: center;
